@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let styles=["Jazz","Blues"]
+        styles.push('Rock-n-Roll')
+        //alert(styles)
+        styles[Math.floor((styles.length-1)/2)]="Classic";
+        alert( styles.shift() );
+        //alert(styles)
+        styles.unshift("rap","reggage");
+        alert(styles)
+
+    </script>
+</body>
+</html>
