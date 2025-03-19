@@ -7,6 +7,11 @@
 </head>
 <body>
     <script>
+        //ArthmaticProgression
+        function ArthmaticProgression(n){
+            return (n*(n+1));
+        }
+        //recursion
         function sum(n){
     if (n==0){
         return 0;
@@ -14,7 +19,15 @@
         return n+sum(n-1);
     }
 }
-alert(sum(10))
+alert(ArthmaticProgression(23))
+alert(sum(11))
+//loop
+let num=10;
+let s=0;
+for(let i=0;i<=num;i++){
+    s += i
+}
+alert(s)
     </script>
 </body>
 </html>
