@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //recurrsion
+        function printList(list) {
+    if (!list) return; 
+    
+    alert(list.value); 
+    printList(list.next); 
+}
+//loop
+function printList(list) {
+    let current = list;
+    
+    while (current) { 
+        console.log(current.value); 
+        current = current.next; 
+    }
+}
+//smalllisi-recursion
+//largelist-loopis better
+printList(list);
+printList(list);
+    </script>
+</body>
+</html>
